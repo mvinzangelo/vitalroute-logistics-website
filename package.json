@@ -1,6 +1,5 @@
 {
   "name": "vitalroute-logistics-website",
-  "homepage": "https://mvinzangelo.github.io/vitalroute-logistics-website",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
