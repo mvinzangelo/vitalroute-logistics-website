@@ -28,7 +28,7 @@ export const useForm = (validate: { (values: IValues): IValues }) => {
     const errors = validate(values);
     setFormState((prevState) => ({ ...prevState, errors }));
 
-    const url = ""; // Fill in your API URL here
+    const url = "https://formspree.io/f/mblnzwev"; // Fill in your API URL here
 
     try {
       if (Object.values(errors).every((error) => error === "")) {
@@ -68,7 +68,7 @@ export const useForm = (validate: { (values: IValues): IValues }) => {
   };
 
   const handleChange = (
-    event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+    event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
   ) => {
     event.persist();
     const { name, value } = event.target;
